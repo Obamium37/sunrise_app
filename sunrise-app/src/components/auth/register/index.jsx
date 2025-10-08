@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Navigate, Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../../../contexts/authContext'
 import { doCreateUserWithEmailAndPassword } from '../../../firebase/auth'
+import './index.css'
 
 const Register = () => {
 
@@ -28,10 +29,11 @@ const Register = () => {
             {userLoggedIn && (<Navigate to={'/home'} replace={true} />)}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
-                <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
+                <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl" id="new-account-box">
                     <div className="text-center mb-6">
-                        <div className="mt-2">
-                            <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">Create a New Account</h3>
+                        <div className="mt-2" id="new-account-header">
+                            <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">Let's get started</h3>
+                            <p>Welcome to Sunrise! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut qui numquam quas quibusdam, possimus facilis, delectus accusantium reprehenderit ratione tenetur, corrupti modi ipsam culpa distinctio. Ullam et sapiente dolores veritatis.</p>
                         </div>
 
                     </div>
