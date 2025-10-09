@@ -1,17 +1,10 @@
-#new-account-box {
-    background-color: lightgray;
-    border-radius: 15px;
-    margin-left: 30em;
-    margin-right: 30em;
-    margin-top: 5em;
-    margin-bottom: 5em;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-top: 2em;
-    padding-bottom: 3em;
-    font-family: Verdana, sans-serif;
+#header-welcome {
+    margin-top: -0.4rem;
+    font-size: 1rem;
+    line-height: 1.4;
 }
 
-#new-account-header {
+#return-to-login {
     text-align: center;
+    margin-top: 1rem;
 }
